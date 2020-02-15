@@ -9,7 +9,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
         <script>
-         console.log("test");
          "use strict";
          function submitForm(oFormElement) {
              var xhr = new XMLHttpRequest();
@@ -38,11 +37,11 @@
             <h1>Is your review positive, or negative?</h1>
             <p>Enter your review below and click submit to find out...</p>
             <form method="POST"
-                  action="https://tgbeov65k0.execute-api.us-east-1.amazonaws.com/production"
+                  action="https://wb1d2mdcv1.execute-api.us-east-2.amazonaws.com/prod"
                   onsubmit="return submitForm(this);" >                     <!-- HERE IS WHERE YOU NEED TO ENTER THE API URL -->
                 <div class="form-group">
                     <label for="review">Review:</label>
-                    <textarea class="form-control"  rows="5" id="review"></textarea>
+                    <textarea class="form-control"  rows="5" id="review">Please write your review here.</textarea>
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
             </form>
